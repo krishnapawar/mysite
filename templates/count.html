@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>well come to word count function</h1>
+<a href="{% url 'index' %}">Home</a><br><br>
+
+{{ textf }}
+<br><br>
+word lenght={{ wordlenth }}
+<br><br>
+this is list of word={{listt}}
+<br><br>
+this is dictionary={{ wordd1 }}
+<br><br>
+{% for word,value in wordd1 %}
+{{word}} = {{value}}
+<br>
+{% endfor %}
+
+</body>
+</html>
